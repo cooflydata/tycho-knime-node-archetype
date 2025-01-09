@@ -6,12 +6,11 @@
 <site>
 #if( $branded == "Y")
 	<feature id="${parentArtifactId}.feature" version="${qversion}">
-		<category name="nl.esciencecenter.3D-e-Chem" />
+		<category name="com.github.cooflydata" />
 	</feature>
-	<category-def name="nl.esciencecenter.3D-e-Chem" label="KNIME 3D-e-Chem Contributions">
+	<category-def name="com.github.cooflydata" label="KNIME Coofly Contributions">
 		<description>
-			3D-e-Chem: Collection KNIME nodes &amp; Extensions for the NLeSC 3d-e-Chem
-			project
+			Coofly: Collection KNIME nodes &amp; Extensions for the Coofly project
 		</description>
 	</category-def>
 #else

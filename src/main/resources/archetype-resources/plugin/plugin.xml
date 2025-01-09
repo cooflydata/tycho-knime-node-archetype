@@ -1,6 +1,6 @@
 #set( $packagepath = $package.replace(".", "/") )
 #if( $branded == "Y")
-#set( $path = '/community/3d-e-chem')
+#set( $path = '/community/cooflydata')
 #else
 #set( $path = '/community')
 #end

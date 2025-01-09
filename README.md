@@ -1,6 +1,6 @@
 # Tycho KNIME node archetype
 
-[![Java CI with Maven](https://github.com/3D-e-Chem/tycho-knime-node-archetype/actions/workflows/ci.yml/badge.svg)](https://github.com/3D-e-Chem/tycho-knime-node-archetype/actions/workflows/ci.yml)
+[![Java CI with Maven](https://github.com/cooflydata/tycho-knime-node-archetype/actions/workflows/ci.yml/badge.svg)](https://github.com/cooflydata/tycho-knime-node-archetype/actions/workflows/ci.yml)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597989.svg)](https://doi.org/10.5281/zenodo.597989)
 
 Generates [KNIME](http://www.knime.org) workflow node skeleton repository with sample code.
@@ -33,7 +33,7 @@ Items above are documented in the generated README.md file, the README also incl
 * Java ==17
 * Maven >=3.0
 
-The archetype is hosted on a [GitHub packages repository](https://github.com/orgs/3D-e-Chem/packages?repo_name=tycho-knime-node-archetype).
+The archetype is hosted on a [GitHub packages repository](https://github.com/orgs/cooflydata/packages?repo_name=tycho-knime-node-archetype).
 Maven does not resolve to this GitHub packages repository by default so it must be added.
 
 The [~/.m2/settings.xml](https://maven.apache.org/settings.html) should contain the following profile:
@@ -43,17 +43,24 @@ The [~/.m2/settings.xml](https://maven.apache.org/settings.html) should contain 
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0
                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
-  <profiles>
-    <profile>
-      <id>knimearchetype</id>
-      <repositories>
-        <repository>
-          <id>archetype</id>
-          <url>https://maven.pkg.github.com/3D-e-Chem</url>
-        </repository>
-      </repositories>
-    </profile>
-  </profiles>
+    <profiles>
+        <profile>
+            <id>knimearchetype</id>
+            <repositories>
+                <repository>
+                    <id>archetype</id>
+                    <url>https://maven.pkg.github.com/cooflydata</url>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+    <servers>
+        <server>
+            <id>github-cooflydata</id>
+            <username>cooflydata</username>
+            <password>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</password>
+        </server>
+    </servers>
 </settings>
 ```
 
@@ -61,7 +68,7 @@ The [~/.m2/settings.xml](https://maven.apache.org/settings.html) should contain 
 
 The following command will generate a skeleton project
 ```sh
-mvn archetype:generate -DarchetypeGroupId=nl.esciencecenter \
+mvn archetype:generate -DarchetypeGroupId=com.github.cooflydata \
 -DarchetypeArtifactId=tycho-knime-node-archetype \
 -DarchetypeVersion=2.0.4 -P knimearchetype
 ```
@@ -76,7 +83,7 @@ The command will ask the following questions:
 6. Enter the GitHub repository name
 7. Enter the KNIME node name
 8. Enter the vendor name
-9. For branded property enter `Y` to enable the 3D-e-Chem project branding like splash logo, node category and update site category or enter `N` to skip the branding.
+9. For branded property enter `Y` to enable the Coofly project branding like splash logo, node category and update site category or enter `N` to skip the branding.
 9. Confirm
 
 The skeleton has been generated in a sub-directory named after the artifactId in the current working directory.
@@ -103,7 +110,7 @@ Further instructions about generated project can be found in it's README.md file
 4. Register the archetype catalog which contains this archetype
 
       1. Goto Window > Preferences > Maven > Archetypes
-      2. Add a remote catalog with `https://github.com/3D-e-Chem/tycho-knime-node-archetype/raw/master/archetype-catalog.xml`
+      2. Add a remote catalog with `https://github.com/cooflydata/tycho-knime-node-archetype/raw/master/archetype-catalog.xml`
 
 5. Create a new project based on archetype
 

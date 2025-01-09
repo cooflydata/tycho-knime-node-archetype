@@ -82,7 +82,7 @@ Unit tests written in Junit4 format can be put in `tests/src/java`.
 
 ${symbol_pound}${symbol_pound}${symbol_pound} Workflow tests
 
-See https://github.com/3D-e-Chem/knime-testflow${symbol_pound}3-add-test-workflow
+See https://github.com/cooflydata/knime-testflow${symbol_pound}3-add-test-workflow
 
 ${symbol_pound}${symbol_pound} Speed up builds
 
@@ -104,7 +104,7 @@ ${symbol_pound} New release
   1. Correct authors
   2. Correct license
 #if( $branded == "Y")
-9.  Make nodes available to 3D-e-Chem KNIME feature by following steps at https://github.com/3D-e-Chem/knime-node-collection#new-release
+9.  Make nodes available to Coofly KNIME feature by following steps at https://github.com/cooflydata/knime-node-collection#new-release
 10. Update `CITATION.cff` file with new DOI, version, release date
 #else
 9.  Update `CITATION.cff` file with new DOI, version, release date

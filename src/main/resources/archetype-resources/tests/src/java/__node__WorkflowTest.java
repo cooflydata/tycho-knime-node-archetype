@@ -13,7 +13,7 @@ import org.knime.core.node.workflow.UnsupportedWorkflowVersionException;
 import org.knime.core.util.LockFailedException;
 import org.knime.testing.core.TestrunConfiguration;
 
-import nl.esciencecenter.e3dchem.knime.testing.TestFlowRunner;
+import com.github.cooflydata.e3dchem.knime.testing.TestFlowRunner;
 
 public class ${node}WorkflowTest {
     @Rule
