@@ -54,6 +54,13 @@ The [~/.m2/settings.xml](https://maven.apache.org/settings.html) should contain 
             </repositories>
         </profile>
     </profiles>
+    <servers>
+        <server>
+            <id>github-cooflydata</id>
+            <username>cooflydata</username>
+            <password>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</password>
+        </server>
+    </servers>
 </settings>
 ```
 
