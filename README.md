@@ -45,7 +45,7 @@ The [~/.m2/settings.xml](https://maven.apache.org/settings.html) should contain 
                           https://maven.apache.org/xsd/settings-1.0.0.xsd">
     <profiles>
         <profile>
-            <id>knimearchetype</id>
+            <id>knime-archetype</id>
             <repositories>
                 <repository>
                     <id>archetype</id>
@@ -63,7 +63,7 @@ The following command will generate a skeleton project
 ```sh
 mvn archetype:generate -DarchetypeGroupId=com.github.cooflydata \
 -DarchetypeArtifactId=tycho-knime-node-archetype \
--DarchetypeVersion=2.0.4 -P knimearchetype
+-DarchetypeVersion=2.0.4 -P knime-archetype
 ```
 
 The command will ask the following questions:
