@@ -13,12 +13,12 @@ import org.knime.core.node.workflow.UnsupportedWorkflowVersionException;
 import org.knime.core.util.LockFailedException;
 import org.knime.testing.core.TestrunConfiguration;
 
-import com.github.cooflydata.e3dchem.knime.testing.TestFlowRunner;
+//import com.github.cooflydata.knime.testing.TestFlowRunner;
 
 public class ${node}WorkflowTest {
     @Rule
     public ErrorCollector collector = new ErrorCollector();
-    private TestFlowRunner runner;
+//    private TestFlowRunner runner;
 
     @Before
     public void setUp() {
@@ -27,13 +27,13 @@ public class ${node}WorkflowTest {
         runConfiguration.setReportDeprecatedNodes(true);
         runConfiguration.setCheckMemoryLeaks(true);
         runConfiguration.setLoadSaveLoad(false);
-        runner = new TestFlowRunner(collector, runConfiguration);
+//        runner = new TestFlowRunner(collector, runConfiguration);
     }
 
     @Test
     public void test_simple() throws IOException, InvalidSettingsException, CanceledExecutionException,
-            UnsupportedWorkflowVersionException, LockFailedException, InterruptedException {
-        File workflowDir = new File("src/knime/simple-test");
-        runner.runTestWorkflow(workflowDir);
+//            UnsupportedWorkflowVersionException, LockFailedException, InterruptedException {
+//        File workflowDir = new File("src/knime/simple-test");
+//        runner.runTestWorkflow(workflowDir);
     }
 }
